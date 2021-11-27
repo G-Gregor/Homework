@@ -34,7 +34,7 @@
 
     let isAdault = confirm('Are you over 18?');
 
-    alert(isAdault);
+    console.log(isAdault);
 
 /* Task 6 */
 
