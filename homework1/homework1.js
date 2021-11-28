@@ -58,17 +58,17 @@
 
 /* Task 7 */
 
-    let yourLogin = prompt('Your login, please ');
+    let yourLogin = prompt('Your login, please');
 
-    alert(yourLogin);
+    prompt('Your login, please', yourLogin);
 
-    let yourEmail = prompt('Your email, please');
+    let yourEmail = prompt('Your email, please' );
 
-    alert(yourEmail);
+    prompt('Your email, please', yourEmail);
 
-    let password = prompt('Your password, please');
+    let password = prompt('Your password, please', '54647'); 
 
-    alert(password);
+    prompt('Your password, please', password);
 
 /* Task 8 */
 
