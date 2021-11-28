@@ -66,7 +66,7 @@
 
     prompt('Your email, please', yourEmail);
 
-    let password = prompt('Your password, please', '54647'); 
+    let password = prompt('Your password, please'); 
 
     prompt('Your password, please', password);
 
