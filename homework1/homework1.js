@@ -59,16 +59,10 @@
 /* Task 7 */
 
     let yourLogin = prompt('Your login, please');
-
-    prompt('Your login, please', yourLogin);
-
     let yourEmail = prompt('Your email, please' );
-
-    prompt('Your email, please', yourEmail);
-
     let password = prompt('Your password, please'); 
 
-    prompt('Your password, please', password);
+    alert(`Dear ${yourLogin} your email ${yourEmail}, Your password ${password}`);
 
 /* Task 8 */
 
