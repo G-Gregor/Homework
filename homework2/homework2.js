@@ -206,36 +206,36 @@
 
      // 2-ий Варіант
 
-        // let intervalsTime1 = time > 23 && time < 5 || time == 0;
-        // let intervalsTime2 = time < 5 < time && time < 11;
-        // let intervalsTime3 = 11 < time && time < 17;
-        // let intervalsTime4 = time > 17 && time < 23;
+        let intervalsTime1 = time > 23 && time < 5 || time == 0;
+        let intervalsTime2 = time < 5 < time && time < 11;
+        let intervalsTime3 = 11 < time && time < 17;
+        let intervalsTime4 = time > 17 && time < 23;
 
-        // let booleanTime = !!time;
+        let booleanTime = !!time;
         
-        // switch(booleanTime) {
+        switch(booleanTime) {
 
-        //     case  intervalsTime2 :
+            case  intervalsTime2 :
 
-        //         alert(`${currentTime};   Доброго ранку!`);
+                document.write(`${currentTime};   Доброго ранку!`);
 
-        //             break;
+                    break;
 
-        //     case  intervalsTime3 :
+            case  intervalsTime3 :
 
-        //         alert(`${currentTime};   Доброго дня!`);
+                document.write(`${currentTime};   Доброго дня!`);
 
-        //             break;
+                    break;
 
-        //     case  intervalsTime4 :
+            case  intervalsTime4 :
 
-        //         alert(`${currentTime};  Доброго вечора!`);
+                document.write(`${currentTime};  Доброго вечора!`);
 
-        //             break;
+                    break;
 
-        //     case  intervalsTime1 :
+            case  intervalsTime1 :
 
-        //         alert(`${currentTime};  Доброї ночі!`);
+                document.write(`${currentTime};  Доброї ночі!`);
 
-        //             break;
-        // }
+                    break;
+        }
