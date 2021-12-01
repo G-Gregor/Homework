@@ -185,19 +185,19 @@
     
     // 1-ий Варіант
 
-        if ( 23 < time && time < 5 || time == 0){   
+        if ( 23 <= time && time < 5 || time == 0){   
 
             alert(`${currentTime};  Доброї ночі!`);
 
-        } else if (5 < time && time < 11 ) {
+        } else if (5 <= time && time < 11 ) {
 
             alert(`${currentTime};   Доброго ранку!`);
 
-        } else if (11 < time && time < 17 ){
+        } else if (11 <=  time && time < 17 ){
 
             alert(`${currentTime};   Доброго дня!`);
 
-        } else if (17 < time && time < 23 ){
+        } else if (17 <= time && time < 23 ){
 
             alert(`${currentTime};  Доброго вечора!`);
 
@@ -206,10 +206,10 @@
 
      // 2-ий Варіант
 
-        let intervalsTime1 = time > 23 && time < 5 || time == 0;
-        let intervalsTime2 = time < 5 < time && time < 11;
-        let intervalsTime3 = 11 < time && time < 17;
-        let intervalsTime4 = time > 17 && time < 23;
+        let intervalsTime1 = time >= 23 && time < 5 || time == 0;
+        let intervalsTime2 = time >= 5  && time < 11;
+        let intervalsTime3 = time >= 11 && time < 17;
+        let intervalsTime4 = time >= 17 && time < 23;
 
         let booleanTime = !!time;
         
