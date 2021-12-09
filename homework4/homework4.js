@@ -7,12 +7,13 @@
         if (width == '' || height == '') throw ('Field is empty');
         width = +width;
         height = +height 
-        if (isNaN(width) || isNaN(width) || (width <= 0 || height <= 0)) throw ('The value is not correct !' );
-        const S = width * height; 
+        if (isNaN(width) || isNaN(height) || (width <= 0 || height <= 0)) throw ('The value is not correct !' );
+        const S = width * height;
+        console.log(S);
     }
 
     try {
-       console.log (calcRectangleArea(width, height));
+        console.log(calcRectangleArea(width, height));
     } catch (error) {
         alert( error);   
     }
@@ -110,44 +111,3 @@
         }
 
         ShowUsers([7, -12, 44, 22]); 
-
-        
-         
-     
-        
-       
-            
-        // if(ids[i] > 0){
-        //     myArr.push({id: ids[i]})
-        // }   
-       
-    //     function ShowUsers(ids){
-
-    //         for(let i = 0; i < ids.length; i++){
-    //             let id = ids[i];
-    //             console.log(id);
-    //             function ShowUser(id){
-    //                 if (id < 0) {
-    //                     throw new Error  (`ID must not be negative: ${id} `);
-    //                 } else{
-    //                     return {id: id};
-    //                 }  
-    //             }
-    //              let el = ShowUser(id);
-    //              console.log(el);
-                
-    //                 if(ids[i] > 0){
-    //                      myArr = myArr.push(el);
-    //                 }
-    //                  console.log[myArr];
-    //                 // return myArr;
-    //         }
-    //     }
-
-    //     try {    
-    //         ShowUsers([7, -12, 44, 22]);  
-    //    }
-    //    catch (e) {
-    //        console.log( e.name + ' ' + e.message);
-    //     } 
-  
