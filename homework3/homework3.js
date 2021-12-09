@@ -71,7 +71,7 @@
       let num1 = prompt('Введіть число a'); 
       let a = parseFloat(num1);
 
-      if (isNaN(a) || Number.isInteger(a) === false) {
+      if (Number.isInteger(a) === false) {
 
             alert('Ви ввели не коректні данні!');
 
@@ -80,7 +80,7 @@
       let num2 = prompt('Введіть число b');
       let b = parseFloat(num2);
 
-      if (isNaN(b) || Number.isInteger(a) === false) {
+      if ( Number.isInteger(a) === false) {
 
             alert('Ви ввели не коректні данні!');
 
