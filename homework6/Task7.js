@@ -1,0 +1,12 @@
+let body = document.body;
+let scr = document.getElementsByTagName('script')[0];
+let newMain = document.createElement('main');
+body.insertBefore(newMain, scr);
+newMain.className = 'mainClass check item';
+let div = document.createElement('div');
+div.id = 'myDiv';
+newMain.prepend(div);
+let p = document.createElement('p');
+div.prepend(p);
+let text = document.createTextNode('First paragraph');
+p.prepend(text);

@@ -55,7 +55,7 @@
         console.log('Current course:' + stud1.showCourse(2013));  
 
 /* Task 4 */
-
+const sortArr = [];
 class Worker {
     #experience = 1.2;
 
@@ -67,16 +67,21 @@ class Worker {
     }
 
     constructor(fullName, dayRate, workingDays) {
-        this.fullName = fullName;
-        this.dayRate = dayRate;
-        this.workingDays = workingDays;
+        this.fullName = fullName,
+        this.dayRate = dayRate,
+        this.workingDays = workingDays,
+        sortArr.push(this);
     }
 
     showSalary() {
         console.log(this.fullName + ':' + ' ' + this.dayRate * this.workingDays);
     }
     showSalaryWithExperience() {
-        return this.fullName + ':' + ' ' + this.dayRate * this.workingDays * this.showExp;;
+        return( `${this.fullName} :  ${this.dayRate * this.workingDays * this.showExp}`);
+    }   
+
+    showSalaryExperience() {
+        return( this.dayRate * this.workingDays * this.showExp);
     }   
 }
 
@@ -120,15 +125,14 @@ console.log("New experience: " + work4.showExp);
 let finalyExp4 = work4.showSalaryWithExperience();;
 console.log(finalyExp4);
 
-const sortArr = [];
-sortArr.push(parseFloat(finalyExp1.match(/\d+/)));
-sortArr.push(parseFloat(finalyExp2.match(/\d+/))); 
-sortArr.push(parseFloat(finalyExp3.match(/\d+/))); 
-sortArr.push(parseFloat(finalyExp4.match(/\d+/)));
 
 
 console.log ('Sorted solary:')
-console.log(sortArr.sort(function(a, b){return a - b}));
+
+let sotedSelery = sortArr.sort(function(a, b){
+    return a.showSalaryExperience() - b.showSalaryExperience()
+});
+console.log(sotedSelery);
 
 
 
