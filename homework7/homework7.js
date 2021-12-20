@@ -89,7 +89,7 @@
 /* Task 7 */
 
     const newCountry = document.getElementById('country');
-    let txt = document.getElementsByTagName('p');
+    let txt = document.querySelector('.name');
     let cities = document.getElementById('cities');
 
     let ukr = ['Kiev', 'Lviv', 'Odessa'];
@@ -98,30 +98,29 @@
 
     function addOption()
 	{ 
-	   let selind = newCountry.options.selectedIndex;
-       let nameCaun = newCountry.options[newCountry.selectedIndex].text;
-	 switch (selind)
+	   let country = newCountry.options.selectedIndex;
+	 switch (country)
 	  {
 	  case 0:
 
-	    for (let i = 0; i < ger.length; i++)
-	    {
+	    for (let i = 0; i < ger.length; i++){
 	       cities[i] = new Option(ger[i], i);
+           
 	    }
+
 	    break;
 
 	  case 1:
 
-	    for (let j = 0; j < usa.length; j++)
-	    {
+	    for (let j = 0; j < usa.length; j++){
 	       cities[j] = new Option(usa[j], j);
 	    }
+
 	    break;
 
 	    case 2:
 	    
-	    for (let k = 0; k < ukr.length; k++)
-	    {
+	    for (let k = 0; k < ukr.length; k++){
 	       cities[k] = new Option(ukr[k], k);
 	    }
 
@@ -134,11 +133,14 @@
 
   function nameCauntry(){
     let nameCaun = newCountry.options[newCountry.selectedIndex].text;
-    for (l = 0; l < cities.length; l++)   {
-    let nameCity = cities.options[l].text;
-    txt[2].innerText = `${nameCaun}  ${nameCity}`;
-    }   
+
+    let nameCity = cities.options[cities.selectedIndex].text;
+    console.log(nameCity)
+    txt.innerText = `${nameCaun}  ${nameCity}`;
+
 }
+// [cities.options.selectedIndex]
+
 
 
 
