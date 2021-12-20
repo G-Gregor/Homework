@@ -137,9 +137,7 @@
     let nameCity = cities.options[cities.selectedIndex].text;
     console.log(nameCity)
     txt.innerText = `${nameCaun}  ${nameCity}`;
-
 }
-// [cities.options.selectedIndex]
 
 
 
