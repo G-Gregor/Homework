@@ -129,8 +129,8 @@
      nameCauntry();
  }
 
- newCountry.addEventListener("change", addOption);
-
+ newCountry.addEventListener('change', addOption);
+ newCountry.addEventListener('change', nameCauntry);
   function nameCauntry(){
     let nameCaun = newCountry.options[newCountry.selectedIndex].text;
 
@@ -139,6 +139,6 @@
     txt.innerText = `${nameCaun}  ${nameCity}`;
 }
 
-
+cities.addEventListener('change', nameCauntry);
 
 
